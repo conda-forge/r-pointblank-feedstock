@@ -1,4 +1,4 @@
-{% set version = "0.8.0" %}
+{% set version = "0.9.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/pointblank_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/pointblank/pointblank_{{ version }}.tar.gz
-  sha256: ee5126c6b6019b3ebc9242cd79e9c408cf55482b615b2b6548f8366aae04f1bb
+  sha256: a688f6bc433f5a12cc74797b2e59a633cc10ca1583b5173cdf64fcb59bd9c295
 
 build:
   merge_build_host: true  # [win]
